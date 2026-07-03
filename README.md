@@ -1,0 +1,1 @@
+# SegFy.API.GestaoSinistros
