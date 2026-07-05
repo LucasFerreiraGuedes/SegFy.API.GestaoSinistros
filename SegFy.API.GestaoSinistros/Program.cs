@@ -1,9 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using SegFy.API.GestaoSinistros.Application.Interfaces;
-using SegFy.API.GestaoSinistros.Application.Repository;
-using SegFy.API.GestaoSinistros.Application.Services;
-using SegFy.API.GestaoSinistros.Infrastructure.Context;
-using SegFy.API.GestaoSinistros.Infrastructure.Repository;
+using SegFy.API.GestaoSinistros.Infrastructure;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,12 +16,7 @@ builder.Services.AddControllers()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<AppDbContext>(c => c.UseSqlServer(builder.Configuration.GetConnectionString("DbConnectionString")));
-builder.Services.AddScoped<IHistoricoService, HistoricoService>();
-builder.Services.AddScoped<ISinistroService, SinistroService>();
-builder.Services.AddScoped<IApoliceRepository, ApoliceRepository>();
-builder.Services.AddScoped<IHistoricoSinistroRepository, HistoricoSinistroRepository>();
-builder.Services.AddScoped<ISinistroRepository, SinistroRepository>();
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
