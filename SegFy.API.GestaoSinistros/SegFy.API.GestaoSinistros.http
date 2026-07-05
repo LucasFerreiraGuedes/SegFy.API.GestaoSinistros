@@ -1,0 +1,6 @@
+@SegFy.API.GestaoSinistros_HostAddress = http://localhost:5289
+
+GET {{SegFy.API.GestaoSinistros_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

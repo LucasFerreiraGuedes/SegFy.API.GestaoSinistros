@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="SegFy.API.GestaoSinistros.Application/SegFy.API.GestaoSinistros.Application.csproj" Id="6ae40388-29fe-4343-b4f7-a90d73179df3" />
+  <Project Path="SegFy.API.GestaoSinistros.Domain/SegFy.API.GestaoSinistros.Domain.csproj" Id="02eb9807-b403-4da9-8fd9-7bae89ebb147" />
+  <Project Path="SegFy.API.GestaoSinistros.Infrastructure/SegFy.API.GestaoSinistros.Infrastructure.csproj" Id="e8b25105-896f-4634-b504-06a81f1bd8b4" />
+  <Project Path="SegFy.API.GestaoSinistros.Test/SegFy.API.GestaoSinistros.Test.csproj" Id="105a054f-a22b-4146-9bf6-0700f04ce790" />
+  <Project Path="SegFy.API.GestaoSinistros/SegFy.API.GestaoSinistros.csproj" />
+</Solution>
